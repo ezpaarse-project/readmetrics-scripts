@@ -2,7 +2,7 @@ name: Build and deploy documentation
 on:
   push:
     branches:
-      - doc
+      - main
     paths:
       - 'doc/**'
 jobs:
@@ -15,7 +15,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@2.0.3
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BASE_BRANCH: doc
+          BASE_BRANCH: main
           BRANCH: gh-pages
           FOLDER: doc/dist
           BUILD_SCRIPT: npm install && npm run build && npm run generate

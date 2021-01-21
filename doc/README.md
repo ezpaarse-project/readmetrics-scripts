@@ -1,4 +1,4 @@
-# doc
+# ReadMETRICS Documentation
 
 ## Setup
 

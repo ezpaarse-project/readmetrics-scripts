@@ -1,0 +1,10 @@
+{
+  "title": "ReadMetrics documentation",
+  "url": "https://ezpaarse-project.github.io/readmetrics-scripts",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "ezpaarse-project/readmetrics-scripts",
+  "twitter": "ezpaarse"
+}

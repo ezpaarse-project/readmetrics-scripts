@@ -1,5 +1,5 @@
 ---
-title: How to use
+title: Utilisation
 description: ''
 position: 3
 category: 'Pour commencer'

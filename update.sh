@@ -2,6 +2,13 @@
 
 APP=$1
 
+EZPAARSE_WORKING_MATERIALS=(
+  "exclusions"
+  "middlewares"
+  "platforms"
+  "resources"
+)
+
 # No argumentes
 if [ "$#" -eq 0 ]; then
   printf "Usage: ./update.sh <application> [ressources]\n"
@@ -19,23 +26,35 @@ update_ezpaarse () {
 
   printf "[Launching ezPAARSE]\n"
   docker-compose -f ezpaarse/docker-compose.yml up -d
+}
+
+update_all () {
+  update_ezpaarse
+
+  for var in "${EZPAARSE_WORKING_MATERIALS[@]}"; do
+    printf "[Downloading ezPAARSE $var update]\n"
+    docker-compose -f ezpaarse/docker-compose.yml run ezpaarse bash -c "make $var-update"
+  done
+
+  printf "[Restarting ezPAARSE]\n"
+  docker-compose -f ezpaarse/docker-compose.yml restart ezpaarse
+
+  printf "\Update completed"
 
   exit 0
 }
 
 update_ressources () {
   ressources=$1
-  working_materials=(
-    "exclusions"
-    "middlewares"
-    "platforms"
-    "resources"
-  )
 
-  if [[ ! " ${working_materials[@]} " =~ " ${ressources} " ]]; then
+  if [ "$ressources" == "all" ]; then
+    update_all
+  fi
+
+  if [[ ! " ${EZPAARSE_WORKING_MATERIALS[@]} " =~ " ${ressources} " ]]; then
     printf "$ressources is not available\n"
     printf "Working materials available :\n"
-    for var in "${working_materials[@]}"
+    for var in "${EZPAARSE_WORKING_MATERIALS[@]}"
     do
       printf "  - ${var}\n"
     done
@@ -52,6 +71,8 @@ update_ressources () {
 
   printf "[Restarting ezPAARSE]\n"
   docker-compose -f ezpaarse/docker-compose.yml restart ezpaarse
+
+  printf "\Update completed"
 
   exit 0
 }
@@ -70,4 +91,6 @@ if [[ "$APP" == "ezpaarse" ]]; then
   fi
 
   update_ezpaarse
+  printf "\Update completed"
+  exit 0
 fi

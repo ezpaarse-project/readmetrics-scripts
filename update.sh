@@ -2,7 +2,7 @@
 
 APP=$1
 
-# No argumentes
+# No arguments
 if [ "$#" -eq 0 ]; then
   printf "Usage: ./update.sh <application> [ressources]\n"
   exit 1

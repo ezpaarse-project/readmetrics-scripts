@@ -21,5 +21,5 @@ export default theme({
   docs: {
     primaryColor: '#E24F55',
   },
-  fullTextSearchFields: ['title', 'description', 'slug', 'text'],
+  fullTextSearchFields: ['title', 'description', 'text'],
 })

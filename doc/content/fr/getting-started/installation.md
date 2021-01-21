@@ -5,7 +5,7 @@ position: 2
 category: 'Pour commencer'
 ---
 
-Assurez-vous que vous avez bien rempli les [prérequis](/getting-started/requirements) avant d'aller plus loin.
+Assurez-vous que vous avez bien rempli les [prérequis](requirements) avant d'aller plus loin.
 
 ## Version stable
 

@@ -5,7 +5,7 @@ position: 2
 category: 'Getting started'
 ---
 
-Make sure you fulfilled the [requirements](/getting-started/requirements) before going any further.
+Make sure you fulfilled the [requirements](requirements) before going any further.
 
 ## Stable version
 

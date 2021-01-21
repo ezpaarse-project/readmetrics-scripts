@@ -1,6 +1,9 @@
 import theme from '@nuxt/content-theme-docs'
 
 export default theme({
+  router: {
+    base: '/readmetrics-scripts/',
+  },
   i18n: {
     locales: () => [
       {

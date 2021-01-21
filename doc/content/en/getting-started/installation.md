@@ -5,7 +5,8 @@ position: 2
 category: 'Getting started'
 ---
 
-Make sure you fulfilled the [requirements](requirements) before going any further.
+
+Make sure you fulfilled the <nuxt-link to="/getting-started/requirements">requirements</nuxt-link> before going any further.
 
 ## Stable version
 

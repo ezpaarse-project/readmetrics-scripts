@@ -5,7 +5,7 @@ position: 2
 category: 'Pour commencer'
 ---
 
-Assurez-vous que vous avez bien rempli les [prérequis](requirements) avant d'aller plus loin.
+Assurez-vous que vous avez bien rempli les <nuxt-link to="/getting-started/requirements">prérequis</nuxt-link> avant d'aller plus loin.
 
 ## Version stable
 

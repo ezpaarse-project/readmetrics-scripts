@@ -18,4 +18,4 @@ jobs:
           BASE_BRANCH: main
           BRANCH: gh-pages
           FOLDER: doc/dist
-          BUILD_SCRIPT: cd doc && npm install && npm run build && npm run generate
+          BUILD_SCRIPT: npm install --prefix ./doc && npm run generate --prefix ./doc

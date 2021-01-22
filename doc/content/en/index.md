@@ -10,7 +10,7 @@ features:
   - enabling comparative citation analysis
 ---
 
-<img src="/readmetrics-scripts/en/preview.svg" width="1280" height="640" alt="" />
+<img src="en/preview.svg" width="1280" height="640" alt="" />
 
 ## What is ReadMETRICS ?
 

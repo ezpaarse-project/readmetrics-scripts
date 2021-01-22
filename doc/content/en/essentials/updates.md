@@ -4,7 +4,6 @@ description: ''
 position: 4
 category: 'Essential things to know'
 ---
-
 ## ezPAARSE
 
 The following commands update and rebuild the core of ezPAARSE.

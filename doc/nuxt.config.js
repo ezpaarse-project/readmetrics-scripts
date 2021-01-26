@@ -1,6 +1,6 @@
 import theme from '@nuxt/content-theme-docs'
 
-const baseUrl = '/readmetrics-scripts/';
+const baseUrl = '/readmetrics-scripts/'
 
 export default theme({
   router: {

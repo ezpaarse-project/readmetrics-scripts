@@ -1,0 +1,15 @@
+<svg width="1280" height="640" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="642" width="1282" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text style="cursor: move;" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="25" id="svg_1" y="314" x="50.125" stroke-width="0" stroke="#000" fill="#ffffff">ReadMETRICS : un ensemble de logiciels robustes pour les statistiques d'utilisation</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="sans-serif" font-size="20" id="svg_2" y="347" x="162.32501" stroke-width="0" stroke="#000" fill="#ffffff">Vous fournir un aperçu complet de l'utilisation des ressources électroniques de votre institution</text>
+ </g>
+</svg>

@@ -10,7 +10,8 @@ features:
   - enabling comparative citation analysis
 ---
 
-<img src="en/preview.svg" width="1280" height="640" alt="" />
+<img src="en/preview.svg" class="light-img" style="filter: invert(1);" width="1280" height="640" alt="" />
+<img src="en/preview.svg" class="dark-img" width="1280" height="640" alt="" />
 
 ## What is ReadMETRICS ?
 

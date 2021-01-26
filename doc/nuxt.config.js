@@ -1,8 +1,10 @@
 import theme from '@nuxt/content-theme-docs'
 
+const baseUrl = '/readmetrics-scripts/';
+
 export default theme({
   router: {
-    base: '/readmetrics-scripts/',
+    base: baseUrl,
   },
   i18n: {
     locales: () => [
@@ -20,6 +22,7 @@ export default theme({
       },
     ],
     defaultLocale: 'en',
+    baseUrl,
   },
   docs: {
     primaryColor: '#E24F55',

@@ -1,6 +1,8 @@
 # readmetrics-scripts
 Scripts for installing and managing Readmetrics.
 
+[Documentation](https://ezpaarse-project.github.io/readmetrics-scripts/)
+
 ```bash
 # Install ezPAARSE and ezMESURE into the current directory and initialize everything needed
 ./install.sh

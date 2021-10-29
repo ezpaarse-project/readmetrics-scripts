@@ -2,6 +2,7 @@
 
 printf "\n[Fetching latest ezPAARSE docker-compose.yml]\n"
 mkdir ezpaarse
+test -f ezpaarse/config.local.json || echo '{}' > ezpaarse/config.local.json
 wget https://raw.githubusercontent.com/ezpaarse-project/ezpaarse/master/docker-compose.yml -O ezpaarse/docker-compose.yml
 
 printf "\n[Cloning ezMESURE]\n"

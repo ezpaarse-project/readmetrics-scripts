@@ -1,2 +1,4 @@
 ezmesure/
 ezpaarse/
+node_modules/
+dist/
